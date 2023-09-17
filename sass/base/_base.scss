@@ -1,0 +1,48 @@
+:root {
+    // Body (400)
+    --ff-body: 'Open Sans', sans-serif;
+    // Headings, Call-to-actions, Header Navigation (400, 700)
+    --ff-accent: 'Raleway', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    // Colors Primary
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    // Colors Accent
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+
+    // Colors Neutral
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+// Breakpoints
+$bp-desktop: 90em; // 1440px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    // center content on page
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
