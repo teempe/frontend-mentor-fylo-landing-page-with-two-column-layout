@@ -1,0 +1,22 @@
+.hero {
+    padding: 7.4rem 2.7rem 14.3rem;
+    text-align: center;
+    color: var(--color-very-dark-blue);
+
+    display: grid;
+    justify-items: center;
+
+    &__illustration {
+        width: 30.4rem;
+        margin-bottom: 4rem;
+    }
+
+    & .heading-1 {
+        margin-bottom: 4rem;
+    }
+
+    & p {
+        max-width: 29.6rem;
+        margin-bottom: 3.2rem;
+    }
+}
