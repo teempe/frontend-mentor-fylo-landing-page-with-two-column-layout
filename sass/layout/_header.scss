@@ -1,0 +1,11 @@
+.header {
+    padding: 2.4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 8rem;
+    }
+}
