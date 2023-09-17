@@ -1,0 +1,16 @@
+{
+  "name": "frontend-mentor-fylo-landing-page-with-two-column-layout",
+  "version": "1.0.0",
+  "description": "Frontend Mentor - Fylo landing page with two column layout solution",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "compile:sass": "sass sass/main.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "teempe",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.67.0"
+  }
+}
