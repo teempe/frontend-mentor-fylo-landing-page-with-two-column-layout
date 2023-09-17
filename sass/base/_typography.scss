@@ -1,0 +1,25 @@
+%heading {
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold);
+    line-height: 1.5em;
+    color: var(--color-very-dark-blue);
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 2.4rem;
+}
+
+.heading-2 {
+    @extend %heading;
+
+    &--section {
+        font-size: 1.6rem;
+    }
+
+    &--cta {
+        font-size: 1.8rem;
+        line-height: 1.33em;
+        color: var(--color-white);
+    }
+}

@@ -8,16 +8,21 @@
     --fw-bold: 700;
 
     // Colors Primary
-    --very-dark-blue: hsl(243, 87%, 12%);
-    --desaturated-blue: hsl(238, 22%, 44%);
+    --color-very-dark-blue: hsl(243, 87%, 12%);
+    --color-desaturated-blue: hsl(238, 22%, 44%);
 
     // Colors Accent
-    --bright-blue: hsl(224, 93%, 58%);
-    --moderate-cyan: hsl(170, 45%, 43%);
+    --color-bright-blue: hsl(224, 93%, 58%);
+    --color-moderate-cyan: hsl(170, 45%, 43%);
 
     // Colors Neutral
-    --light-grayish-blue: hsl(240, 75%, 98%);
-    --light-gray: hsl(0, 0%, 75%);
+    --color-light-grayish-blue: hsl(240, 75%, 98%);
+    --color-light-gray: hsl(0, 0%, 75%);
+    --color-white: hsl(0, 0%, 100%);
+
+    --color-font-body: hsl(243, 14%, 43%);
+    --color-btn-active: hsl(221, 100%, 71%);
+    --color-red: hsl(343, 84%, 61%);
 }
 
 // Breakpoints
@@ -39,6 +44,12 @@ html {
 }
 
 body {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    line-height: 1.5em;
+    color: var(--color-font-body);
+    background-color: var(--color-light-grayish-blue);
+
     overflow-x: hidden;
     // center content on page
     display: grid;
