@@ -1,0 +1,44 @@
+.how-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    &:link,
+    &:visited {
+        text-decoration: none;
+        font-size: 1.2rem;
+        line-height: normal;
+        color: var(--color-green);
+        
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--color-green);
+
+        transition: all 0.25s ease-out;
+
+        &::after {
+            content: "";
+            background: url('../images/icon-arrow.svg');
+            background-size: cover;
+            width: 1.2rem;
+            height: 1.2rem;
+            display: inline-block;
+        }
+    }
+
+    &:hover,
+    &:active {
+        color: var(--color-light-green);
+        border-bottom: 1px solid var(--color-light-green);
+
+        &::after {
+            content: "";
+            background: url('../images/icon-arrow-light.svg');
+            background-size: cover;
+            width: 1.2rem;
+            height: 1.2rem;
+            display: inline-block;
+        }
+    }
+
+
+}
