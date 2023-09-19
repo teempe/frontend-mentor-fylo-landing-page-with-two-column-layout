@@ -1,0 +1,25 @@
+.contact-link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--color-white);
+
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+
+    &::before {
+        content: "";
+        width: 2.4rem;
+        height: 2.4rem;
+        display: inline-block;
+    }
+
+    &--tel::before {
+        background: no-repeat center url('../images/icon-phone.svg');
+    }
+
+    &--mail::before {
+        background: no-repeat center url('../images/icon-email.svg');
+    }
+}

@@ -1,0 +1,32 @@
+.footer {
+    color: var(--color-white);
+    background-color: var(--color-very-dark-blue);
+
+    padding: 6.5rem 3.9rem 4.2rem;
+
+    display: grid;
+    row-gap: 3.2rem;
+
+    &__logo {
+        width: 10.5rem;
+    }
+
+    &__links-group {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.6rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: currentcolor;
+
+        transition: color 0.25s ease-out;
+    }
+
+    &__link:hover,
+    &__links:active {
+        color: var(--color-btn-active);
+    }
+}

@@ -1,0 +1,36 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+
+    & .social-link {
+        list-style-type: none;
+    
+        &__link:link,
+        &__link:visited {
+            text-decoration: none;
+            color: var(--color-white);
+            transition: color 0.25s ease-out;
+        }
+    
+        &__link:hover,
+        &__link:active {
+            color: var(--color-btn-active);
+        }
+        
+        &__circle {
+            width: 2.7rem;
+            height: 2.7rem;
+            border: 1px solid currentcolor;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+        }
+    
+        &__icon {
+            font-size: 1.2rem;
+            color: currentcolor;
+        }
+    }
+}

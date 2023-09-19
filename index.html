@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="./css/style.css">
 
         <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+        <script src="https://kit.fontawesome.com/f6d47cd3e1.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -92,18 +94,43 @@
                 </section>
             </main>
 
-            <footer>
-                Phone: +1-543-123-4567
-                example@fylo.com
+            <footer class="footer">
+                <img src="./images/logo-white.svg" alt="Fylo logo." class="footer__logo">
+                <div class="footer__links-group">           
+                    <a href="tel:+1-543-123-4567" class="contact-link contact-link--tel">Phone: +1-543-123-4567</a>
+                    <a href="mailto:example@fylo.com" class="contact-link contact-link--mail">example@fylo.com</a>
+                </div>  
 
-                About Us
-                Jobs
-                Press
-                Blog
+                <div class="footer__links-group">
+                    <a href="#" class="footer__link">About Us</a>
+                    <a href="#" class="footer__link">Jobs</a>
+                    <a href="#" class="footer__link">Press</a>
+                    <a href="#" class="footer__link">Blog</a>
+                </div>
+    
+                <div class="footer__links-group">
+                    <a href="#" class="footer__link">Contact Us</a>
+                    <a href="#" class="footer__link">Terms</a>
+                    <a href="#" class="footer__link">Privacy</a>
+                </div>
 
-                Contact Us
-                Terms
-                Privacy
+                <ul class="social-links">
+                    <li class="social-link">
+                        <a href="https://facebook.com" class="social-link__link social-link__circle" aria-label="Facebook profile.">
+                            <i class="fa-brands fa-facebook-f social-link__icon"></i>
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="https://twitter.com" class="social-link__link social-link__circle" aria-label="Twitter profile.">
+                            <i class="fa-brands fa-x-twitter social-link__icon"></i>
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="https://instagram.com" class="social-link__link social-link__circle" aria-label="Instagram profile.">
+                            <i class="fa-brands fa-instagram social-link__icon"></i>
+                        </a>
+                    </li>
+                 </ul>
             </footer>
         </div>
     </body>
