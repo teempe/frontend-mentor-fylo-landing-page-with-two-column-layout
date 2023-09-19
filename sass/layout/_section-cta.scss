@@ -1,0 +1,19 @@
+.cta {
+    color: var(--color-white);
+    background-color: var(--color-desaturated-blue);
+
+    padding: 5.4rem 4.7rem 7.1rem;
+
+    display: grid;
+    justify-items: center;
+
+    &__heading {
+        margin-bottom: 1.6rem;
+    }
+
+    &__text {
+        margin-bottom: 2.4rem;
+    }
+    
+    // &__form {}
+}
