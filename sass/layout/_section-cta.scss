@@ -16,8 +16,6 @@
         margin-bottom: 2.4rem;
     }
     
-    // &__form {}
-
     @include media-screen-min($bp-desktop) {
         text-align: left;
         padding: 10rem 8rem 8.5rem;
