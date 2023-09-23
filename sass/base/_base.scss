@@ -62,4 +62,8 @@ body {
     justify-content: center;
     align-content: center;
     min-height: 100vh;
+
+    @include media-screen-min($bp-desktop) {
+        font-size: 1.6rem;
+    }
 }
