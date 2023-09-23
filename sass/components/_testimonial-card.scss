@@ -59,4 +59,39 @@
         }
     }
 
+    @include media-screen-min($bp-desktop) {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        letter-spacing: 0.05rem;
+
+        max-width: 35.6rem;
+        padding: 4.9rem 3.3rem 2.6rem;
+
+        &__text {
+            margin-bottom: 1.6rem;
+
+            &::before {
+                top: -2.3rem;
+            }
+        }
+
+        &__author {
+            column-gap: 0.8rem;
+            row-gap: 0rem;
+
+            &-avatar {
+                width: 3.2rem;
+            }
+        
+            &-name {
+                font-size: 1.1rem;
+            }
+        
+            &-title {
+                font-size: 0.8rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
 }

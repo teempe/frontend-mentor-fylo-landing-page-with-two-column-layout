@@ -33,4 +33,17 @@
             color: currentcolor;
         }
     }
+
+    @include media-screen-min($bp-desktop) {
+        gap: 1.25rem;
+
+        &__circle {
+            width: 3.1rem;
+            height: 3.1rem;
+        }
+    
+        &__icon {
+            font-size: 1.4rem;
+        }
+    }
 }

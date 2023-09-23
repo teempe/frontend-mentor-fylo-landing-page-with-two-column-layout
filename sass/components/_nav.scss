@@ -1,6 +1,6 @@
 .nav {
     display: flex;
-    gap: 2.4rem;
+    column-gap: 2.4rem;
 
     &__link {
         text-decoration: none;
@@ -10,5 +10,13 @@
         font-size: 1.2rem;
         line-height: normal;
         color: var(--color-very-dark-blue);
+    }
+
+    @include media-screen-min($bp-desktop) {
+        column-gap: 5.7rem;
+
+        &__link {
+            font-size: 1.6rem;
+        }
     }
 }
