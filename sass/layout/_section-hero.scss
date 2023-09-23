@@ -11,6 +11,11 @@
         margin-bottom: 4rem;
     }
 
+    &__content {
+        display: grid;
+        justify-items: center;
+    }
+
     &__heading {
         margin-bottom: 2.4rem;
     }
@@ -18,5 +23,37 @@
     &__text {
         max-width: 29.6rem;
         margin-bottom: 3.2rem;
+    }
+
+    @include media-screen-min($bp-desktop) {
+        text-align: left;
+        padding: 2.1rem 8rem 27.8rem;
+
+        grid-template-columns: 1fr max-content;
+        align-items: center;
+        column-gap: 4rem;
+
+        &__illustration {
+            width: 64rem;
+            margin-bottom: 0rem;
+        }
+
+        &__content {
+            order: -1;
+            justify-items: start;
+            margin-top: -4.4rem;
+        }
+    
+        &__heading {
+            margin-bottom: 1.5rem;
+        }
+    
+        &__text {
+            font-size: 1.7rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.05rem;
+            max-width: none;
+            margin-bottom: 2.5rem;
+        }
     }
 }

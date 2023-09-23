@@ -8,4 +8,12 @@
     &__logo {
         width: 8rem;
     }
+
+    @include media-screen-min($bp-desktop) {
+        padding: 6.5rem 8rem;
+
+        &__logo {
+            width: auto;
+        }
+    }
 }

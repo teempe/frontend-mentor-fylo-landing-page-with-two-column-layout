@@ -17,4 +17,23 @@
     }
     
     // &__form {}
+
+    @include media-screen-min($bp-desktop) {
+        text-align: left;
+        padding: 10rem 8rem 8.5rem;
+
+        justify-items: start;
+        align-items: center;
+        grid-template-columns: 53.3rem max-content;
+        column-gap: 22.7rem;
+
+        &__heading {
+            margin-bottom: 1.7rem;
+        }
+    
+        &__text {
+            margin-bottom: 0rem;
+            letter-spacing: 0.05rem;
+        }
+    }
 }

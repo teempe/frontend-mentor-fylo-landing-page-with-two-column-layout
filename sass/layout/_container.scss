@@ -1,4 +1,8 @@
 .container {
     max-width: 37.5rem;
     background-color: var(--color-white);
+
+    @include media-screen-min($bp-desktop) {
+        max-width: 144rem;
+    }
 }

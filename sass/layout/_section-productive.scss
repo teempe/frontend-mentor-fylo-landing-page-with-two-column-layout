@@ -22,6 +22,11 @@
         margin-bottom: 8.7rem;
     }
 
+    &__content {
+        display: grid;
+        justify-items: center;
+    }
+
     &__heading {
         margin-bottom: 2.4rem;
     }
@@ -36,5 +41,44 @@
 
     &__how-btn {
         margin-bottom: 4rem;
+    }
+
+    @include media-screen-min($bp-desktop) {
+        padding: 6.4rem 8rem 10.7rem;
+        text-align: left;
+
+        grid-template-columns: 1fr max-content;
+        column-gap: 4rem;
+        justify-items: start;
+        align-items: center;
+    
+        &::before {
+            background: url('../images/bg-curve-desktop.svg');
+            height: 11.4rem;
+            top: -11.4rem;
+        }
+    
+        &__illustration {
+            width: 54.2rem;
+            margin-bottom: 4rem;
+        }
+
+        &__content {
+            order: -1;
+            justify-items: start;
+        }
+    
+        &__heading {
+            margin-bottom: 3.8rem;
+        }
+        
+        &__text {
+            margin-bottom: 1.5rem;
+            max-width: 52.9rem;
+        }
+    
+        &__how-btn {
+            margin-bottom: 4.5rem;
+        }        
     }
 }
